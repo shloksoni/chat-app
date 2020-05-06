@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat App</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+<body>
+    <div id="login">
+        <p>Enter a username</p>
+        <p id="loginError"></p>
+        <form id="setUsername">
+            <input type="text" id="username">
+            <input type="submit" value="CHAT">
+        </form>
+        <h3>
+            <ul>
+                <li>
+                    For private messages-> @username message
+                </li>
+                <li>
+                    private messages will be shown in center in yellow color;
+                </li>
+            </ul>
+        </h3>
+    </div>
+    <div id ="contentWrap">
+        <div class="container">
+            <div id ="chatWrap">
+                <div id = "chat" > </div>
+                <form id="send-message">
+                    <input  id="message">
+                    <input type="submit" value="SEND">
+                </form>
+            </div>
+            <div id ="users"></div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>

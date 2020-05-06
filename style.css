@@ -1,0 +1,68 @@
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    background-color: black;
+    text-align: center;
+    color: aqua;
+    margin: 2px;
+}
+#chat{
+    height: 500px;
+    
+}
+#contentWrap{
+    
+    display: none;
+
+}
+.container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+#chatWrap{
+    width: 70vw;
+    border: 2px solid;
+
+}
+#chat{
+    overflow: scroll;
+    scroll-behavior: smooth;
+}
+.error{
+    color: red;
+    font-weight: lighter;
+}
+#private-msg{
+    font-style: oblique;
+    color: yellow;
+    background-color: blue;
+    margin: 5px;
+    
+}
+.normal-message{
+    
+    width: 100%;
+    height: auto;
+    float:left;
+    text-align: left;
+    margin: 5px;
+
+}
+#self-msg{
+    float: right;
+    width: 100%;
+    text-align: right;
+    margin: 5px;
+    
+
+}
+
+#message{
+    padding: 10px;
+    width: 80%;
+    border-radius: 40px;
+    outline: none;
+    
+
+}
